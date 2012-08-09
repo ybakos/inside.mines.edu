@@ -1,0 +1,123 @@
+p.notice {
+  background: #CFC;
+  color: #050;
+  font-size: 10px;
+  font-family: verdana,arial,sans-serif;
+  padding: 2px;
+  text-align: center;
+}
+
+div#lectures {
+  float:left;
+  width: 590px;
+}
+
+div#project {
+  margin-left: 605px;
+  width: 250px;
+  background-color: #F0F0F0;
+  padding: 0px 10px;
+}
+div#project ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+div.sidebar {
+  font-size: .8em;
+  margin-left: 605px;
+  width: 250px;
+  background-color: #F0F0F0;
+  padding: 0px 10px;
+}
+
+div.sidebar ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+table.relation {
+  border: 1px solid #333;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+table.relation caption {
+  font-weight: bold;
+  background-color: #F0F0F0;
+}
+
+table.relation td, table.relation th {
+  border: 1px solid #333;
+  padding: 3px;
+}
+
+div.upcoming {
+  color: #999;
+}
+
+div#resources ul li.top {
+  margin-top: 10px;
+}
+
+span.code {
+  font-family: courier, serif;
+  color: #CCC;
+}
+
+div.code {
+  background: #F0F0F0;
+  font-family: courier, serif;
+  color: #333;
+}
+
+body.teaching {
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  letter-spacing: -.04em;
+  background: url('/images/gradient.jpg') repeat-x;
+}
+body.teaching h1 {
+  margin-bottom: 0px;
+}
+body.teaching h2 {
+  margin: 0px 0px 1em 0px;
+}
+body.teaching h2.marginless_bottom {
+  margin-bottom: 0px;
+}
+
+body.teaching address {
+  font-style: normal;
+}
+body.teaching p.section_description {
+  margin-top: 0px;
+}
+body.teaching div.panel {
+  padding: 10px;
+  float:right;
+  width: 300px;
+  background: #E9E9E0;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-border-radius: 12px;
+}
+
+.shadow {
+  -moz-box-shadow: 2px -2px 2px #666;
+  -webkit-box-shadow: 2px -2px 2px #666;
+  box-shadow: 2px -2px 2px #666;
+}
+
+body.teaching a {
+  text-decoration: none;
+}
+body.teaching a:link {
+  color: #D93D04;
+}
+body.teaching a:visited {
+  color: #544759;
+}
+body.teaching a:hover {
+  color: #F27405;
+}

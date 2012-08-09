@@ -1,0 +1,171 @@
+body {
+	background-color: #FFFFFF;
+}
+
+a:link {
+	color: #C00;
+}
+a:visited {
+	color: #936;
+	text-decoration: none;
+}
+a:hover {
+	background-color: #EFEFEF;
+}
+a:active {
+	color: #F00;
+}
+
+h1#coursename {
+	margin: 0px;
+}
+
+h2#semester {
+	margin: 10px 0px 40px 0px;
+}
+
+h3#syllabus {
+	margin-left: 605px;
+	font-size: 14px;
+}
+
+p.notice {
+  background: #CFC;
+  color: #050;
+  font-size: 10px;
+  font-family: verdana,arial,sans-serif;
+  padding: 2px;
+  text-align: center;
+}
+
+div#lectures {
+  float:left;
+  width: 590px;
+}
+
+div#lectures h3 {
+	margin: 0px 0px 10px 0px;
+}
+
+div#project {
+  margin-left: 605px;
+  width: 250px;
+  background-color: #F0F0F0;
+  padding: 0px 10px;
+}
+div#project ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+div.sidebar {
+  font-size: .8em;
+  margin: 0px 0px 20px 605px;
+  width: 250px;
+  background-color: #F0F0F0;
+  padding: 3px 10px;
+}
+
+div.sidebar h3 {
+	margin: 0px 0px 2px 0px;
+}
+
+div.sidebar ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+table.relation {
+  border: 1px solid #333;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+table.relation caption {
+  font-weight: bold;
+  background-color: #F0F0F0;
+}
+
+table.relation td, table.relation th {
+  border: 1px solid #333;
+  padding: 3px;
+}
+
+div.upcoming {
+  color: #999;
+}
+
+div.lecture {
+	margin-bottom: 20px;
+}
+div.lecture h4 {
+	margin: 0px;
+}
+div.lecture p {
+	margin: 0px 0px 10px 0px;
+}
+div.lecture p.prelecture {
+	font-size: 12px;
+}
+div.lecture p.postlecture {
+	font-style: italic;
+}
+
+div#resources ul li.top {
+  margin-top: 10px;
+}
+
+span.code {
+  font-family: courier, serif;
+  color: #CCC;
+}
+
+div.code {
+  background: #F0F0F0;
+  font-family: courier, serif;
+  color: #333;
+}
+
+div.fun {
+  clear: both;
+}
+
+li.complete {
+   text-decoration:line-through;
+}
+
+a.template {
+  font-size: 10px;
+  font-family: verdana;
+  font-weight: normal;
+}
+
+h3#name {
+  float: right;
+  margin: 0px 200px 0px 0px;
+}
+ol.quiz li {
+  margin-bottom: 180px;
+}
+ol.quiz li:last-child {
+  margin-bottom: 0px;
+}
+table.matrix {
+  border: 1px solid #999;
+  border-collapse: collapse;
+}
+table.matrix td {
+  padding: 10px;
+}
+
+div.screencast_thumbnail {
+  float: left;
+  width: 100px;
+  border: 1px solid #900;
+  margin-right: 10px;
+}
+div.screencast_thumbnail a img {
+  width: 100px;
+  border: 0px;
+}

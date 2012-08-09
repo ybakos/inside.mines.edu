@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-us">
+<head> 
+<title>From NAND to Tetris, A Computer Science Course Proposal</title>
+<meta name="author" content="Yong Bakos" >
+<meta http-equiv="content-type" content="text/html;charset=utf-8" >
+<meta http-equiv="Content-Style-Type" content="text/css" >
+<link rel="stylesheet" type="text/css" href="/css/proposals.css" >
+</head>
+<body>
+<div class="credit">
+  <p>2009 Yong Joseph Bakos. (303) 653-3017</p>
+</div>
+<h1>From NAND to Tetris</h1>
+<h2>Building a Modern Computer from First Principles</h2>
+
+<div class="sidebar">
+  <div class="panel">
+    <p><a href="http://www1.idc.ac.il/tecs/course/talk.pdf">pdf presentation for this course</a></p>
+  </div>
+  <div class="panel">
+    <h3>Textbook</h3>
+    <p><a href="http://www1.idc.ac.il/tecs/"><img src="http://www1.idc.ac.il/tecs/book/cover.jpg" /></a></p>
+    <p style="font-size: .7em;"><a href="http://www1.idc.ac.il/tecs/">book home page</a> |
+      <a href="http://www.amazon.com/Elements-Computing-Systems-Building-Principles/dp/0262640686/ref=sr_1_1?ie=UTF8&s=books&qid=1249531967&sr=8-1">on amazon</a> |
+      <a href="http://mitpress.mit.edu/catalog/item/default.asp?tid=10218&ttype=2">at MIT press</a> | 
+      <a href="http://books.google.com/books?id=THie6tt-2z8C&dq=elements+of+computing+systems&printsec=frontcover&source=bn&hl=en&ei=mFh6SvueBZCusgOs75nKDw&sa=X&oi=book_result&ct=result&resnum=4#v=onepage&q=&f=false">google books</a></p>
+  </div>
+  <div class="panel">
+    <p><a href="http://www1.idc.ac.il/tecs/software.html">software</a> |
+      <a href="http://www1.idc.ac.il/tecs/course/syllabus.pdf">syllabus</a> |
+      <a href="http://www1.idc.ac.il/tecs/plan.html">study plan</a></p>
+  </div>
+  <br />
+  <div class="panel">
+    <h3>10-minute video</h3>
+    <object width="380" height="310"><param name="movie" value="http://www.youtube.com/v/JtXvUoPx4Qs&hl=en&fs=1&"></param><param name=a"allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/JtXvUoPx4Qs&hl=en&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="380" height="310"></embed></object>
+  </div>
+  <br />
+  <div class="panel">
+    <h3>1-hour video</h3>
+    <embed id="VideoPlayback" src="http://video.google.com/googleplayer.swf?docid=7654043762021156507&hl=en&fs=true" style="width:380px;height:312px" allowFullScreen="true" allowScriptAccess="always" type="application/x-shockwave-flash"> </embed>
+  </div>
+</div>
+
+<h3>Summary</h3>
+<p>This is a proposal for an excellent university-level course that fills the gaps within a modern computer science curriculum and ensures that students understand, in great detail, how a computer works by guiding them through building one from scratch. It is based on the excellent book <a href="http://www1.idc.ac.il/tecs/">The Elements of Computing Systems</a> from MIT Press and successful classes from the Efi Arazi School of Computer Science (Interdisciplinary Center of Herzliya).</p>
+
+<h3>The Problem</h3>
+<p>As both an employer of software developers and an instructor of computer science, I have witnessed an unfortunate deficiency in today's computer science graduates: a majority of students lack critical fundamental understanding of first principles and fail to understand how a computer and computer program really work.</p>
+<blockquote>
+  <p>&quot;Once upon a time, every computer specialist had a gestalt understanding of how computers worked. Failure to see this intricate enterprise in the flesh leaves many students and professionals with an uneasy feeling that, well, they don't fully understand what's going on inside computers.&quot; <span class="citation">(Nisan, p. ix)</span></p>
+</blockquote>
+<p>This problem should be familiar to most computer science departments in the United States.</p>
+
+<blockquote>
+  <p>&quot;It is our view that Computer Science (CS) education is neglecting basic skills, in particular in the areas of programming and formal methods. We consider that the general adoption of Java as a first programming language is in part responsible for this decline. We examine briefly the set of programming skills that should be part of every software professional's repertoire.&quot; <span class="citation">(Dewar, <a href="http://www.stsc.hill.af.mil/crossTalk/2008/01/0801DewarSchonberg.html">url</a>)</span></p>
+</blockquote>
+
+<blockquote>
+  <p>&quot;To sum up Dewar’s argument: today’s college computer science programs aren’t rigorous enough, and don’t promote in-depth thinking and problem solving. Instead, in an effort to boost enrollment, CS programs focus on easily accessible curricula, and so fail to prepare students to compete with their international peers.
+  &quot; <span class="citation">(Maguire, <a href="http://itmanagement.earthweb.com/career/article.php/3722876">url</a>)</span></p>
+</blockquote>
+
+<p>A July 2009 article from <i>Communications of the ACM</i> also discusses the issue:</p>
+  <blockquote>
+    <p>&quot;Another company noted that it had found it a complete waste of time to even interview graduates from U.S. universities, so they added at the end of the job description the sentence 'This work will not involve Web applications or the use of Java,' and that had served to almost completely eliminate U.S. applicants.'&quot; <span class="citation">(Dewar, <a href="http://cacm.acm.org/magazines/2009/7/32090-cs-education-in-the-us-heading-in-the-wrong-direction">url</a>)</span></p>
+  </blockquote>
+
+<p>In short, there is compelling evidence that our computer science graduates have become ill-prepared for building complex software systems, and the first fundamental problem underlying the issue at large is that they lack a deep understanding of how computers and software work.</p>
+  
+<h3>The Solution (how this course helps)</h3>
+<p>From NAND to Tetris bridges the gap between the typical courses found in every modern computer science curriculum and ensures that all students have a deep understanding of boolean logic and math, logic gates, machine language, computer architecture, assembly language, operating systems, virtual machines, compilers, and high-level languages. It accomplishes this goal by guiding students through the construction of the entire abstraction stack of a modern computer with a fun, engaging, continuous project over the course of 12 weeks (one semester).</p>
+<p>This class is based primarily on the work of <a href="http://www.cs.huji.ac.il/~noam/">Noam Nisan</a> and <a href="http://www.faculty.idc.ac.il/schocken/">Shimon Schocken</a>. It is heavily interactive and provides a complete hardware simulator and programming environment with which a computer is built. To get a ten-minute summary of this class, <a href="http://www.youtube.com/watch?v=JtXvUoPx4Qs">please watch this video</a>. For a more thorough, hour-long presentation please view <a href="http://video.google.com/videoplay?docid=7654043762021156507">this longer video</a>.</p>
+
+<p>Upon completion of this course a student should have an intimate understanding of each layer of abstraction present within a modern computer system. This understanding serves as the critical foundation for further exploration and education may be built. For upper-level students, the course fills in knowledge gaps and provides coherence between other classes in a computer science curriculum.</p>
+
+<h3>Course Plan</h3>
+<p>This course fits a typical 12-week semester very well and can also be stretched across two quarters if necessary. <a href="http://www1.idc.ac.il/tecs/plan.html">Take a look at a typical semester study plan</a>. A typical syllabus is <a href="http://www1.idc.ac.il/tecs/course/syllabus.pdf">available here</a>.</p>
+
+<h3>Execution &amp; Curriculum Integration</h3>
+<p>This class is ready to immediately become a part of any university computer science or electrical engineering curriculum. It can serve as a great intro to computer science course or as an elective. From my informal surveys, the student interest and response to this course is very positive. Please direct any questions about this proposal to me by calling (303) 653-3017.</p>
+
+<h3>References</h3>
+<p>Nisan, Noam &amp; Schocken, Shimon. The Elements of Computing Systems. 2005, MIT Press. <a href="http://www1.idc.ac.il/tecs/">more info</a></p>
+<p>Maguire, James. &quot;Who Killed the Software Engineer? (Hint: It Happened in College),&quot; <u>Datamation</u>. <a href="http://itmanagement.earthweb.com/career/article.php/3722876">http://itmanagement.earthweb.com/career/article.php/3722876</a></p>
+<p>Dewar, Robert &amp; Schonberg, Edmond. &quot;Computer Science Education: Where Are the Software Engineers of Tomorrow?&quot; <u>Crosstalk</u>. <a href="http://www.stsc.hill.af.mil/crossTalk/2008/01/0801DewarSchonberg.html">http://www.stsc.hill.af.mil/crossTalk/2008/01/0801DewarSchonberg.html</a></p>
+<p>Dewar, Robert &amp; Astrachan Owen. &quot;CS Education in the U.S.: Heading in the Wrong Direction?&quot; <u>Communications of the ACM</u>. <a href="http://cacm.acm.org/magazines/2009/7/32090-cs-education-in-the-us-heading-in-the-wrong-direction">http://cacm.acm.org/magazines/2009/7/32090-cs-education-in-the-us-heading-in-the-wrong-direction</a></p>
+
+<br />
+
+<h3>If you are interested in this proposal, contact me directly at (303) 653-3017.</h3>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-1044655-3");
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+p.notice {
+  background: #CFC;
+  color: #050;
+  font-size: 10px;
+  font-family: verdana,arial,sans-serif;
+  padding: 2px;
+  text-align: center;
+}
+
+div#lectures {
+  float:left;
+  width: 590px;
+}
+
+div.lecture {
+  margin-bottom: 30px;
+}
+div.lecture p {
+  line-height: 1em;
+  margin: 10px 0px 10px 0px;
+}
+div.lecture h3 {
+  margin:0px;
+}
+div.lecture p.postlecture {
+  font-style: italic;
+}
+
+div.upcoming h3 {
+  margin: 0px;
+}
+p.prelecture {
+  margin-top: 0px;
+  font-size: 12px;
+}
+
+
+
+div#project {
+  margin-left: 605px;
+  width: 250px;
+  background-color: #F0F0F0;
+  padding: 0px 10px;
+}
+div#project ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+div.sidebar {
+  font-size: .8em;
+  margin-left: 605px;
+  width: 250px;
+  background-color: #F0F0F0;
+  padding: 0px 10px;
+}
+
+div.sidebar ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+table.relation {
+  border: 1px solid #333;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+table.relation caption {
+  font-weight: bold;
+  background-color: #F0F0F0;
+}
+
+table.relation td, table.relation th {
+  border: 1px solid #333;
+  padding: 3px;
+}
+
+div.upcoming {
+  color: #999;
+}
+
+div#resources ul li.top {
+  margin-top: 10px;
+}
+
+span.code {
+  font-family: courier, serif;
+  color: #CCC;
+}
+
+div.code {
+  background: #F0F0F0;
+  font-family: courier, serif;
+  color: #333;
+}
