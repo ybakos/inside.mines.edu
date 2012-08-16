@@ -75,7 +75,7 @@ div.code {
 body.teaching {
   font-family: "helvetica neue", helvetica, arial, sans-serif;
   letter-spacing: -.04em;
-  background: url('/images/gradient.jpg') repeat-x;
+  background: url('../images/gradient.jpg') repeat-x;
 }
 body.teaching h1 {
   margin-bottom: 0px;
