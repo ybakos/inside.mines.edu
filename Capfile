@@ -1,7 +1,9 @@
-load 'deploy' if respond_to?(:namespace) # cap2 differentiator
+#require 'rubygems'
+require 'railsless-deploy'
+#load 'config/deploy'
 
 set :application, "Teaching Web Pages"
-set :deploy_to, "deploy"
+set :deploy_to, "~/deploy"
 set :deploy_via, :copy
 set :repository, "build"
 set :scm, :none
