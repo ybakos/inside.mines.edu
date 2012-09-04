@@ -1,0 +1,44 @@
+---
+body_dom_id: home
+---
+
+.hero-unit
+  %h1 Don't call me doctor.
+  %p
+    I'm just a humble
+    %a{:href => "courses.html", :title => "Courses I Teach"} Teaching
+    Assistant Professor in the
+    %a{:href => "http://eecs.mines.edu", :title => "Electrical Engineering and Computer Science Department"} Electrical Engineering and Computer Science
+    department at
+    = succeed "," do
+      %a{:href => "http://mines.edu", :title => "Colorado School of Mines"} Colorado School of Mines
+    and am currently the
+    = succeed "." do
+      %a{:href => "services.html", :title => "My Services"} Assistant Department Head
+    A
+    %a{:href => "http://humanoriented.com", :title => "Denver Software Development"} software developer
+    by trade, I dig
+    %a{:href => "http://www.computer.org/portal/web/swebok", :title => "Software Engineering Body of Knowledge"} software engineering
+    and am dedicated to
+    %a{:href => "http://steam-notstem.com/"} subverting
+    traditional
+    %a{:href => "http://en.wikipedia.org/wiki/Computer_science", :title => "computer science defined"} computer science
+    education.
+  %p
+    %a.btn.btn-primary.btn-large{:href => "teaching_statement.html"} Why I love to teach »
+.row
+  .span4
+    %h2 Courses
+    %p My goal is to ensure our CS graduates understand the entire abstraction stack of computing and to expose them to the best software development tools and modern paradigms. By instilling in them a strong sense of creativity, I hope to empower them to become better software developers, to feel a passion for programming, and to use their skills to create (rather than consume) better software & systems.
+    %p
+      %a.btn{:href => "courses.html"} Course Information »
+  .span4
+    %h2 New Book
+    %p I'm writing a new introductory text on programming concepts with C++ and OpenFrameworks. It is freakin' awesome.
+    %p
+      %a.btn{:href => "postmodern_introduction_programming.html"} Read »
+  .span4
+    %h2 Services
+    %p As Assistant Department Head, I provide course scheduling and resources, undergraduate advising services, curriculum development & planning, and more.
+    %p
+      %a.btn{:href => "services.html"} Get Help »
