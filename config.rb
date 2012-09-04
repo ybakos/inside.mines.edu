@@ -41,11 +41,11 @@
 # activate :automatic_image_sizes
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def default_title
+    "Yong Joseph Bakos, Asst. Teaching Professor, Asst. Department Head, Electrical Engineering & Computer Science, Colorado School of Mines"
+  end
+end
 
 set :css_dir, 'stylesheets'
 
@@ -67,7 +67,7 @@ configure :build do
   # activate :cache_buster
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Compress PNGs after build
   # First: gem install middleman-smusher

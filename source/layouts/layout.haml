@@ -1,31 +1,19 @@
 !!! 5
 %html{:lang => "en"}
   %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %meta{"http-equiv" => "Content-Type", :content => "text/html; charset=UTF-8"}
     %meta{:charset => "utf-8"}
-    %meta{:content => "no-cache, no-store, must-revalidate", "http-equiv" => "Cache-Control"}
-    %meta{:content => "no-cache", "http-equiv" => "Pragma"}
-    %meta{:content => "0", "http-equiv" => "Expires"}
-    / Always force latest IE rendering engine or request Chrome Frame
+    %meta{"http-equiv" => "Cache-Control", :content => "no-cache, no-store, must-revalidate"}
+    %meta{"http-equiv" => "Pragma", :content => "no-cache"}
+    %meta{"http-equiv" => "Expires", :content => "0"}
     %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
-    / Use title if it's in the page YAML frontmatter
-    %title
-      Yong Joseph Bakos, Asst. Teaching Professor,
-      Asst. Department Head,
-      Electrical Engineering & Computer Science, Colorado School of Mines
-    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
-    %meta{:content => "", :name => "description"}
-    %meta{:content => "Yong Bakos", :name => "author"}
-    / Le styles
-    %link{:href => "stylesheets/bootstrap.css", :rel => "stylesheet"}
-    :css
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-    %link{:href => "stylesheets/bootstrap-responsive.css", :rel => "stylesheet"}
-    %link{:href => "stylesheets/screen.css", :rel => "stylesheet"}
-    / Le HTML5 shim, for IE6-8 support of HTML5 elements
+    %title= current_page.data.title || default_title
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
+    %meta{:name => "description", :content => ""}
+    %meta{:name => "author", :content => "Yong Bakos"}
+    = stylesheet_link_tag 'bootstrap'
+    = stylesheet_link_tag 'bootstrap-responsive'
+    = stylesheet_link_tag 'screen'
     /[if lt IE 9]
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     %link{:href => "favicon.ico", :rel => "shortcut icon"}
@@ -42,23 +30,18 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.brand{:href => "http://inside.mines.edu/~ybakos", :title => "Yong Joseph Bakos, Assistant Teaching Professor, Colorado School of Mines"} Yong Joseph Bakos
+          = link_to 'Yong Joseph Bakos', "http://inside.mines.edu/~ybakos",
+             :title => "Yong Joseph Bakos, Assistant Teaching Professor, Colorado School of Mines",
+             :class => 'brand'
           .nav-collapse
             %ul.nav
-              %li.active
-                %a{:href => "http://inside.mines.edu/~ybakos", :title => "Yong Joseph Bakos"} Home
-              %li
-                %a{:href => "courses.html"} Courses
-              %li
-                %a{:href => "services.html"} Services
-              %li
-                %a{:href => "research.html"} Research
-              %li
-                %a{:href => "publications.html"} Publications
-              %li
-                %a{:href => "about.html"} About
-              %li
-                %a{:href => "contact.html"} Contact
+              %li.active= link_to 'Home', 'http://inside.mines.edu/~ybakos', :title => "Yong Joseph Bakos"
+              %li= link_to 'Courses', 'courses.html'
+              %li= link_to 'Services', "services.html"
+              %li= link_to 'Research', "research.html"
+              %li= link_to 'Publications', "publications.html"
+              %li= link_to 'About', "about.html"
+              %li= link_to 'Contact', "contact.html"
     .container
       = yield
       %hr
@@ -69,16 +52,16 @@
             site. Thanks
             = succeed "!" do
               = link_to 'middleman', "http://middlemanapp.com/", :title => "Middleman, a static site generator."
-    %script{:src => "javascripts/jquery.js"}
-    %script{:src => "javascripts/bootstrap-transition.js"}
-    %script{:src => "javascripts/bootstrap-alert.js"}
-    %script{:src => "javascripts/bootstrap-modal.js"}
-    %script{:src => "javascripts/bootstrap-dropdown.js"}
-    %script{:src => "javascripts/bootstrap-scrollspy.js"}
-    %script{:src => "javascripts/bootstrap-tab.js"}
-    %script{:src => "javascripts/bootstrap-tooltip.js"}
-    %script{:src => "javascripts/bootstrap-popover.js"}
-    %script{:src => "javascripts/bootstrap-button.js"}
-    %script{:src => "javascripts/bootstrap-collapse.js"}
-    %script{:src => "javascripts/bootstrap-carousel.js"}
-    %script{:src => "javascripts/bootstrap-typeahead.js"}
+    = javascript_include_tag 'jquery'
+    = javascript_include_tag 'bootstrap-transition'
+    = javascript_include_tag 'bootstrap-alert'
+    = javascript_include_tag 'bootstrap-modal'
+    = javascript_include_tag 'bootstrap-dropdown'
+    = javascript_include_tag 'bootstrap-scrollspy'
+    = javascript_include_tag 'bootstrap-tab'
+    = javascript_include_tag 'bootstrap-tooltip'
+    = javascript_include_tag 'bootstrap-popover'
+    = javascript_include_tag 'bootstrap-button'
+    = javascript_include_tag 'bootstrap-collapse'
+    = javascript_include_tag 'bootstrap-carousel'
+    = javascript_include_tag 'bootstrap-typeahead'
