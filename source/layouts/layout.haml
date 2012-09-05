@@ -42,7 +42,7 @@
               %li= link_to 'Publications', "publications.html"
               %li= link_to 'About', "about.html"
               %li= link_to 'Contact', "contact.html"
-    .container
+    %div{:class => current_page.data.container_class}
       = yield
       %hr
         %footer
