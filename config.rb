@@ -42,9 +42,16 @@
 
 # Methods defined in the helpers block are available in templates
 helpers do
+
   def default_title
     "Yong Joseph Bakos, Asst. Teaching Professor, Asst. Department Head, Electrical Engineering & Computer Science, Colorado School of Mines"
   end
+
+  # Generating the active class for a particular nav bar item
+  def nav_active(page_id)
+    current_page.data.body_dom_id == page_id ? {:class => "active"} : {}
+  end
+
 end
 
 set :css_dir, 'stylesheets'
