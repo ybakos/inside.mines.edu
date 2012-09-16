@@ -4,17 +4,16 @@ container_class: container
 ---
 
 %h1 Yong Joseph Bakos
-%h2
-  %a{:href => "http://engineering.mines.edu", :title => "Dept. of Mathematical & Computer Sciences"} Electrical Engineering & Computer Science
-%h3 College of Engineering & Computational Sciences
-%h3 Colorado School of Mines
+%h2{:style=> "margin: 0px;"}= link_to "Electrical Engineering & Computer Science", "http://engineering.mines.edu", :title => "Dept. of Mathematical & Computer Sciences"
+%h3{:style=> "margin: 0px;"}= link_to "College of Engineering & Computational Sciences", "http://engineering.mines.edu", :title => "College of Engineering & Computational Sciences"
+%h3{:style=> "margin: 0px;"}= link_to "Colorado School of Mines", "http://mines.edu", :title => "Colorado School of Mines"
 %address
-  Brown Building 323
+  Brown Building 323 (BB 323)
   %br
   1500 Illinois Street
   %br
   Golden, CO 80401
-%p.phone 303 384 2468
+%p.phone 303 384 2468 (office)
 %pre.code{:style => 'background-color: #131313; width: 400px;'}
   %span{:style => 'color:#5f5a60;'} #!/usr/bin/env ruby
   %span{:style => 'color:#d0a767; display:inline;'} def <span style="color:#996c3d;">email</span>
@@ -22,3 +21,6 @@ container_class: container
   %span{:style => 'color:#d0a767'} end
 %h2.marginless_bottom Office Hours
 %p.section_description Tues & Thurs from 12 - 1PM & 3 - 4PM. Also available via appointment.
+
+:plain
+  <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;aq=&amp;sll=39.748807,-105.220506&amp;sspn=0.014832,0.014977&amp;ie=UTF8&amp;hq=&amp;hnear=Brown+Building&amp;t=m&amp;ll=39.749698,-105.221397&amp;spn=0.002887,0.00456&amp;z=17&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=brown+building&amp;aq=&amp;sll=39.748807,-105.220506&amp;sspn=0.014832,0.014977&amp;ie=UTF8&amp;hq=&amp;hnear=Brown+Building&amp;t=m&amp;ll=39.749698,-105.221397&amp;spn=0.002887,0.00456&amp;z=17" style="text-align:left">View Larger Map</a></small>
