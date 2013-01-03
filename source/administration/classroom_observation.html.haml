@@ -3,8 +3,17 @@ body_dom_id: administration
 container_class: container-fluid
 ---
 
+%ul.breadcrumb
+  %li
+    = link_to 'Home', '/index.html'
+    %span.divider /
+  %li
+    = link_to 'Administration', '/administration/index.html'
+    %span.divider /
+  %li.active Classroom Observation
+
 %h1 Classroom Observation
-%p This document summarizes the motivations and process for classroom observation as a mechanism for helping peer instructors improve their teaching.
+%p This document summarizes the motivations and process for classroom observation as a mechanism for an instructor to receive feedback from their peers, with the goal of improving teaching quality.
 %p
   Last update:
   = Time.now
@@ -15,8 +24,8 @@ container_class: container-fluid
 %p Observers should familiarize themselves with the course syllabus and course content before observing the classroom.
 %p
   To keep things simple, start with this form [
-  = link_to 'docx', 'assets/eecs_classroom_observation.docx'
-  = link_to 'pdf', 'assets/eecs_classroom_observation.pdf'
+  = link_to 'docx', '/assets/eecs_classroom_observation.docx'
+  = link_to 'pdf', '/assets/eecs_classroom_observation.pdf'
   ].
   The observer should complete the form and return it to the observed instructor.
 
@@ -28,8 +37,8 @@ container_class: container-fluid
 %p
   Ask for a fellow faculty member to observe one of your classes. The observer should follow the guidelines above. Provide the observer with a hard-copy of the observation form
   [
-  = link_to 'docx', 'assets/eecs_classroom_observation.docx'
-  = link_to 'pdf', 'assets/eecs_classroom_observation.pdf'
+  = link_to 'docx', '/assets/eecs_classroom_observation.docx'
+  = link_to 'pdf', '/assets/eecs_classroom_observation.pdf'
   ].
 %p Do not acknowledge or draw attention to the observer during the class.
 
@@ -41,8 +50,8 @@ container_class: container-fluid
   %li
     Arrive early, be unobtrusive, and be sure to bring a hard copy of the observation form
     [
-    = link_to 'docx', 'assets/eecs_classroom_observation.docx'
-    = link_to 'pdf', 'assets/eecs_classroom_observation.pdf'
+    = link_to 'docx', '/assets/eecs_classroom_observation.docx'
+    = link_to 'pdf', '/assets/eecs_classroom_observation.pdf'
     ].
   %li Observe both the instructor's execution and the students' responsiveness.
 
