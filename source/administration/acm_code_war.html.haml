@@ -1,0 +1,48 @@
+---
+body_dom_id: administration
+container_class: container-fluid
+---
+
+%ul.breadcrumb
+  %li
+    = link_to 'Home', '/index.html'
+    %span.divider /
+  %li
+    = link_to 'Administration', '/administration/index.html'
+    %span.divider /
+  %li.active Code War
+
+.alert
+  Last updated on
+  = "#{Time.now.strftime("%A, %B %d %Y")}."
+
+%h1 Code War
+%h2.muted Windward International Collegiate Programming Finals
+
+%h1 Your team will program an AI for bots that will battle each other. You will eat. You will think. You will conquer.
+
+%h2 Wat!?
+%p See the information <a href="http://www.windward.net/code_war.php">here</a>.
+
+:plain
+  <iframe width="640" height="360" src="http://www.youtube.com/embed/uf8uUE40WxM" frameborder="0" allowfullscreen></iframe>
+
+%h2 When
+%p Saturday, January 26. 10AM - 6PM.
+
+%h2 Where
+%p Brown 339 & 340.
+
+%h2 How
+%p Our school has been registered. You merely need to organize a team of 1 - 5 or choose to compete as an individual.
+%p Next, <a href="http://codewar.windward.net/team.aspx">register your team</a>.
+
+%h2 Prizes
+%p See <a href="http://codewar.windward.net/prizes.aspx">here</a>.
+
+%h2 Faculty Contact
+%p= link_to 'Yong Bakos', '/contact.html'
+
+%h2 Reservations
+%p If fewer than five students sign up, the event will be canceled.
+

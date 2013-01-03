@@ -8,19 +8,17 @@ container_class: container-fluid
     .well.sidebar-nav
       %ul.nav.nav-list
         %li.nav-header Spring 2013
-        %li.future Asst. Department Head
-        %li.future EECS UG Committee
-        %li.future UG Council Rep.
-        %li.future ACM Faculty Advisor
-        %li.nav-header Fall 2012
         %li Asst. Department Head
         %li EECS UG Committee
         %li UG Council Rep.
-        %li ACM Faculty Advisor
+        %li
+          ACM Faculty Advisor
+          %ul.nav.nav-list
+            %li= link_to 'Code War', '/administration/acm_code_war.html'
     .well.sidebar-nav
       %ul.nav.nav-list
-        %li.nav-header Administration
-        %li= link_to 'Faculty Peer Review', 'faculty_peer_review.html', :title => 'Faculty Peer Reviews'
+        %li.nav-header Documents
+        %li= link_to 'Classroom Observations', 'faculty_peer_review.html', :title => 'Faculty Peer Reviews'
         %li.future TODO
         %li.future TODO
         %li.future TODO
@@ -58,6 +56,10 @@ container_class: container-fluid
         %h2 Classroom Observations
         %p High-quality teaching should manifest in the classroom. This is a draft proposal for continued classroom observation to support instructor improvement.
         %p= link_to 'Learn more »', 'classroom_observation.html', :title => 'Classroom Observation', :class => 'btn'
+      .span4.alert.alert-error
+        %h2 Code War
+        %p I'm sponsoring a CodeWar challenge on behalf of the Mines ACM group and the school. There are prizes. It is fun.
+        %p= link_to 'Fight! »', 'acm_code_war.html', :title => 'Code War', :class => 'btn'
     .row-fluid
       .span12
         %br
