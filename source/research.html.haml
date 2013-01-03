@@ -46,10 +46,14 @@ container_class: container-fluid
         %a.btn.btn-primary.btn-large Learn more »
     .row-fluid
       .span4
-        %h2 Heading
-        %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+        %h2 Notes from The Passionate Programmer
         %p
-          %a.btn{:href => "#"} View details »
+          An experiment in note publishing, likely relevant to myself and not worth sharing. My notes from
+          = link_to "Chad Fowler's", 'http://www.chadfowler.com/', :title => 'Chad Fowler'
+          = succeed '.' do
+            = link_to 'The Passionate Programmer', 'http://pragprog.com/book/cfcar2/the-passionate-programmer', :title => "The Passionate Progammer"
+        %p
+          %a.btn{:href => "#"} View notes »
       / /span
       .span4
         %h2 Heading
