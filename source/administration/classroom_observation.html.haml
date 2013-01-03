@@ -12,11 +12,13 @@ container_class: container-fluid
     %span.divider /
   %li.active Classroom Observation
 
+.alert
+  This is a draft. Last updated on
+  = "#{Time.now.strftime("%A, %B %d %Y")}."
+
 %h1 Classroom Observation
 %p This document summarizes the motivations and process for classroom observation as a mechanism for an instructor to receive feedback from their peers, with the goal of improving teaching quality.
-%p
-  Last update:
-  = Time.now
+
 
 %h2 Summary
 %p Each faculty member should conduct two classroom observations per semester.
