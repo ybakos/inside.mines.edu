@@ -19,10 +19,7 @@ container_class: container-fluid
       %ul.nav.nav-list
         %li.nav-header Documents
         %li= link_to 'Classroom Observations', 'faculty_peer_review.html', :title => 'Faculty Peer Reviews'
-        %li.future TODO
-        %li.future TODO
-        %li.future TODO
-        %li.future TODO
+        %li= link_to 'Course Resources & Constraints', 'course_resrouces.html', :title => 'EECS Courses, Resources and Constraints'
         %li.future TODO
   .span9
     .hero-unit
@@ -55,11 +52,16 @@ container_class: container-fluid
       .span4
         %h2 Classroom Observations
         %p High-quality teaching should manifest in the classroom. This is a draft proposal for continued classroom observation to support instructor improvement.
-        %p= link_to 'Learn more »', 'classroom_observation.html', :title => 'Classroom Observation', :class => 'btn'
+        %p= link_to 'Become better »', 'classroom_observation.html', :title => 'Classroom Observation', :class => 'btn'
       .span4.alert.alert-error
         %h2 Code War
         %p I'm sponsoring a CodeWar challenge on behalf of the Mines ACM group and the school. There are prizes. It is fun.
         %p= link_to 'Fight! »', 'acm_code_war.html', :title => 'Code War', :class => 'btn'
+    .row-fluid
+      .span4
+        %h2 Course Resources
+        %p This document is a record of operations-specific details about EECS courses. Who teaches, when, what is needed, and so on.
+        %p= link_to 'Read »', 'course_resources.html', :class => 'btn'
     .row-fluid
       .span12
         %br

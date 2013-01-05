@@ -1,0 +1,266 @@
+---
+body_dom_id: administration
+container_class: container-fluid
+---
+
+- content_for :scripts do
+  :javascript
+    $(document).ready(function() {
+        Highcharts.visualize = function(table, options) {
+            options.xAxis.categories = [];
+            $('tbody th', table).each( function(i) {
+                options.xAxis.categories.push(this.innerHTML);
+            });
+            options.series = [];
+            $('tr', table).each( function(i) {
+                var tr = this;
+                $('th, td', tr).each( function(j) {
+                    if (j > 0) { // skip first column
+                        if (i == 0) { // get the name and init the series
+                            options.series[j - 1] = {
+                                name: this.innerHTML,
+                                data: []
+                            };
+                        } else { // add values
+                            options.series[j - 1].data.push(parseFloat(this.innerHTML));
+                        }
+                    }
+                });
+            });
+
+            var chart = new Highcharts.Chart(options);
+        }
+
+        var table = document.getElementById('csci101Table'),
+        options = {
+            chart: {
+                renderTo: 'csci101Chart',
+                type: 'line'
+            },
+            title: {
+                text: 'Enrollment History'
+            },
+            xAxis: {
+                title: {
+                    text: 'Semester'
+                }
+            },
+            yAxis: {
+                title: {
+                    text: '# of Students'
+                },
+                min: 0
+            },
+            tooltip: {
+                formatter: function() {
+                    return '<b>'+ this.series.name +'</b><br/>'+
+                        this.y +' '+ this.x.toLowerCase();
+                }
+            }
+        };
+
+        Highcharts.visualize(table, options);
+    });
+
+%ul.breadcrumb
+  %li
+    = link_to 'Home', '/index.html'
+    %span.divider /
+  %li
+    = link_to 'Administration', '/administration/index.html'
+    %span.divider /
+  %li.active EECS Course Resources &amp; Constraints
+
+.alert
+  Last updated on
+  = "#{Time.now.strftime("%A, %B %d %Y")}."
+
+
+.page-header
+  %h1 EECS Courses, Resources and Constraints
+
+
+%blockquote.pull-right
+  %p I can't believe this shit isn't well-documented.
+  %small
+    Someone famous
+
+%p Documentation of the courses owned by the EECS department.
+
+%ul.nav.nav-tabs
+  %li.active= link_to 'All', '#'
+  %li= link_to '2013 Spring', '#'
+  %li= link_to '2013 Summer', '#'
+  %li= link_to '2013 Fall', '#'
+
+%h2 All Courses
+
+%h3
+  CSCI 101
+  %small Introduction to Computer Science
+%p
+  Distributed science course. Core requirement for CSCI students.
+%p
+  %b Offered
+  Since fall 2010. Fall, spring. MWF, 50 minutes.
+%p
+  %b Instructors
+  %span.label.label-success Keith Hellman
+  Craig Champlin, William (Bill) Bahn
+%p
+  %b Classroom
+  Uses active learning methods. Needs moveable desks, ideally modern rolling tables and chairs.
+%p
+  %b Rooms Previously used
+  AH 330, AH 140, MH 375, BE 243, MH 220, AH 352, AH 340, AH 162, MZ 322
+%p
+  %b Support
+  Needs 1 grader (12 hrs/wk) per section.
+.row-fluid
+  .span5
+    %table#csci101Table.table.table-bordered.table-condensed
+      %thead
+        %tr
+          %th Semester
+          %th Number of Sections
+          %th Total Enrollment
+      %tbody
+        %tr
+          %th 2010 Fall
+          %td 2
+          %td 113
+        %tr
+          %th 2011 Spring
+          %td 2
+          %td 102
+        %tr
+          %th 2011 Fall
+          %td 5
+          %td 194
+        %tr
+          %th 2012 Spring
+          %td 3
+          %td 116
+        %tr
+          %th 2012 Fall
+          %td 4
+          %td 116
+        %tr
+          %th 2013 Spring
+          %td 3
+          %td 119
+  .span7
+    #csci101Chart{:style => 'height: 300px;'}
+
+%h3 CSCI 260 Fortran Programming
+%p This course is taken by...
+
+%p
+  %b Since
+  Fall 2007 or earlier
+%p
+  %b Offered
+  Fall, Spring
+  %br
+  WF, 50 minutes.
+%p
+  %b Instructors
+  %span.label.label-success Larry Johnson
+%p
+  %b Classroom
+  Needs a computer classroom.
+%p
+  %b Support
+  Needs x hours of grading per x students
+
+
+
+%h3 CSCI 261 Programming Concepts
+
+%h3 CSCI 261J Programming Concepts (Java)
+%p This is a "special" section of CSCI261 taught in Java by Ira Hale. The department does not technically administer this course.
+
+%h3 CSCI 262 Data Structures
+
+%h3 CSCI 274 Intro Linux Os
+
+%h3 CSCI 306 Software Engineering
+
+%h3 CSCI 341 Computer Organization
+
+%h3 CSCI 358 Discrete Mathematics
+
+%h3 CSCI 400 Programming Languages
+
+%h3 CSCI 403 Database Management
+
+%h3 CSCI 406 Algorithms
+
+%h3 CSCI 407 Scientific Computing
+
+%h3 CSCI 410 Elements Of Computing Systems
+
+%h3 CSCI 442 Operating Systems
+
+%h3 CSCI 446 Web Applications
+
+%h3 CSCI 447 Scientific Visualization
+
+%h3 CSCI 547 Scientic Visualization
+
+%h3 CSCI 562 Appl Algorithms & Data Structu
+
+%h3 CSCI 564 Advanced Computer Architecture
+
+%h3 CSCI 575 Machine Learning
+
+%h3 CSCI 700 MS Project Credits
+
+%h3 CSCI 707 Graduate Thesis
+
+%h3 EGGN 281 Intro To Circuits
+
+%h3 EGGN 284 Digital Logic
+%p
+  %b Scheduling
+  %span.label.label-important Should be scheduled at 9AM to accommodate Physics students.
+
+%h3 EGGN 307 Intro To Feedback Control Sys
+
+%h3 EGGN 382 Engineering Circuit Analysis
+
+%h3 EGGN 383 Microcomputer Architecture
+
+%h3 EGGN 385 Elec Dev/circuits
+
+%h3 EGGN 386 Fund Of Engineering Electromagnets
+
+%h3 EGGN 388 Information Systems Science
+
+%h3 EGGN 389 Fund Electric Machinry I
+
+%h3 EGGN 481 Digital Signal Processing
+
+%h3 EGGN 487 Anal & Des Of Adv Energy Sys
+
+%h3 EGGN 498ea Comp Meth Engy Sys&pwr Elctrnc
+
+%h3 EGGN 504 Eng Grad Colloquium Ms - Ee
+
+%h3 EGGN 512 Computer Vision
+
+%h3 EGGN 517 Theory & Dsgn Adv Control Sys
+
+%h3 EGGN 519 Estimation Thry&kalman Filtrng
+
+%h3 EGGN 580 Electric Power Quality
+
+%h3 EGGN 589 Design & Cntrl Wind Energy Sys
+
+%h3 EGGN 598ea Power Systems Protection
+
+%h3 EGGN 598eb Sensors
+
+%h3 EGGN 707E Graduate Thesis - Ee
+
+%h3 SYGN 555 Smartgeo Seminar
