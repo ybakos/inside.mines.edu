@@ -1,0 +1,38 @@
+---
+body_dom_id: code
+container_class: container-fluid
+---
+
+.row-fluid
+  .span3
+    .well.sidebar-nav
+      %ul.nav.nav-list
+        %li.nav-header Code
+        %li.active= link_to 'Home', '#'
+        %li= link_to 'GitHub', 'http://github.com/ybakos'
+        %li= link_to 'TODO', '#'
+
+        %li.nav-header For Students
+        %li= link_to 'How I Read Programming Books', 'https://github.com/ybakos/codeschool-objc-primer'
+        %li= link_to 'TODO', '#'
+
+  .span9
+    .hero-unit
+      %h1 Create.
+      %p #TODO Anim carles gastropub, four loko biodiesel put a bird on it esse. Freegan VHS vinyl high life. Ethnic stumptown do, +1 gentrify street art pour-over butcher dolore godard nulla.
+      %p= link_to 'GitHub »', 'https://github.com/ybakos', :class => 'btn btn-primary btn-large'
+    .row-fluid
+      .span4
+        %h2 How I Read Programming Books
+        %p There is merit in "just reading" a programming book, but for books with code I follow a specific practice. Read, hack, take notes. See this simple repository, its commit history, and acommpanying notes for a glimpse at my recommended practice.
+        %p= link_to 'View the Repo »', 'https://github.com/ybakos/codeschool-objc-primer', :class => 'btn'
+      .span4
+        %h2 TODO
+        %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+        %p
+          %a.btn{:href => "#"} View details »
+      .span4
+        %h2 TODO
+        %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+        %p
+          %a.btn{:href => "#"} View details »
