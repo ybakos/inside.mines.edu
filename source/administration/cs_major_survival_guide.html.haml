@@ -1,0 +1,49 @@
+---
+body_dom_id: administration
+container_class: container
+---
+
+%ul.breadcrumb
+  %li
+    = link_to 'Home', '/index.html'
+    %span.divider /
+  %li
+    = link_to 'Administration', '/administration/index.html'
+    %span.divider /
+  %li.active CS Majors Guide
+
+.alert
+  This is a draft. Last updated on
+  = "#{Time.now.strftime("%A, %B %d %Y")}."
+
+%h1 So You're a Computer Science Major...
+%h2.muted A Survival Guide
+
+%h2 Community
+Piazza account
+Alamode account
+SO account
+Github account
+CS Linux VM ready to go w/ all tools for all classes
+acm, acm-w, ieee
+meetups
+blogosphere, twitterverse, etc
+
+%h2 Projects
+Know how to *read* code, not just write it
+build things
+
+%h2 Basics
+Understand difference between an icon and an actual file (gui abstraction vs. real shit)
+Understand how GUIs tend to display archive files (allowing browsing w/o decompression)
+Know what the path is, why it exists, and how to change it (win32, unix)
+Know the specific names of things (eg, "Windows explorer")
+Know how to quickly start win32 cmd.exe, basic navigation and file mgmt.
+Must at least taste Unix (via VM, alamode lab, CSCi274 Intro to Linux course)
+Understand line endings compatibility issues, how to solve them
+
+%h2 Curriculum
+research opps
+combined program
+advice about courses (workload, etc)
+
