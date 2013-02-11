@@ -7,11 +7,19 @@ container_class: container-fluid
   .span3
     .well.sidebar-nav
       %ul.nav.nav-list.course_list
+        %li.nav-header Fall 2013
+        %li.future
+          Center of Creative Computation
+          %ul
+            %li.future ASIM1310 Art + Code
+            %li.future CSE1341 Principles of Computer Science
+            %li.future CSE3342 Programming Languages
+        %hr
         %li.nav-header Spring 2013
-        %li.future CSCI261 Programming Concepts
-        %li.future CSCI403 Database Management
-        %li.future CSCI446 Web Application Development
-        %li.future CSCI499 Mobile Device Programming
+        %li= link_to 'CSCI261 Programming Concepts', 'https://piazza.com/mines/spring2013/csci261/home'
+        %li= link_to 'CSCI403 Database Management', 'https://piazza.com/mines/spring2013/csci403/home'
+        %li= link_to 'CSCI446 Web Application Development', 'https://piazza.com/mines/spring2013/csci446/home'
+        %li= link_to 'CSCI499 Mobile Device Programming', 'https://piazza.com/mines/spring2013/csci499/home'
         %li.nav-header Fall 2012
         %li= link_to 'CSCI261 Programming Concepts', 'https://piazza.com/mines/fall2012/csci261/home'
         %li= link_to 'CSCI410 Elements of Computing Systems', 'https://piazza.com/mines/fall2012/csci410/home'
@@ -63,10 +71,8 @@ container_class: container-fluid
   .span9
     .hero-unit
       %h1 Thought control.
-      %p #TODO
-      %p &lt;&lt; Class links at the left are active.
-      / %p
-      /   %a.btn.btn-primary.btn-large Learn more »
+      %p Teaching and learning are two integrated parts of life-long education. I teach because I love this stuff, and can do it all day, every day.
+      %a.btn.btn-primary.btn-large On Teaching TODO »
     .row-fluid
       .span4
         %h2 Programming Concepts
@@ -153,3 +159,6 @@ container_class: container-fluid
         %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
         %p
           %a.btn{:href => "#"} #TODO »
+    .row-fluid
+      .span12
+        %iframe{:width => '760', :height => '427', :src => "http://www.youtube.com/embed/lwTpZpwjtIE", :frameborder => '0', :allowfullscreen => 'true'}
